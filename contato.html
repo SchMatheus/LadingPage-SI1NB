@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Matheus Schuambach Tostes</title>
+    <link rel="stylesheet" href="contato.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="./Imagens/foto eu.jpeg" alt="Foto Matheus" class="foto_matheus">
+        <h1>Entre em Contato</h1>
+        <nav class="menu">
+            <a href="index.html">Home</a>
+            <a href="currículo.html">Currículo</a>
+            <a href="github.html">Github</a>
+            <a href="serviços.html">Serviços</a>
+            <a href="contato.html" class="ativo">Contato</a>
+        </nav>
+    </header>
+    
+    <hr class="divisoria">
+    
+    <main class="conteudo-principal">
+        <section class="secao">
+            <h2>Entre em contato</h2>
+            <p>Preencha todos os campos abaixo para eu entrar em contato!</p>
+        </section>
+        
+        <section class="secao">
+            <form action="#" method="post" class="form-tabela">
+                <table class="tabela-formulario">
+                    <tr>
+                        <td><label for="nome">Nome Completo *</label></td>
+                        <td><input type="text" id="nome" name="nome" required placeholder="Seu nome completo"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefone">Telefone *</label></td>
+                        <td><input type="tel" id="telefone" name="telefone" required placeholder="(27) 99999-9999"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">E-mail *</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="seu@email.com"></td>
+                    </tr>
+                    <tr>
+                        <td><label>Tipo Cliente *</label></td>
+                        <td>
+                            <label><input type="radio" name="tipo" value="fisica" required> Pessoa Física</label>
+                            <label><input type="radio" name="tipo" value="juridica" required> Pessoa Jurídica</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="horario">Horário *</label></td>
+                        <td>
+                            <select id="horario" name="horario" required>
+                                <option value="">Escolha...</option>
+                                <option value="manha">Manhã (8h-12h)</option>
+                                <option value="tarde">Tarde (13h-17h)</option>
+                                <option value="noite">Noite (18h-21h)</option>
+                                <option value="qualquer">Qualquer</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Serviços *</label></td>
+                        <td>
+                            <label><input type="checkbox" name="servicos[]" value="estatica"> Estática</label><br>
+                            <label><input type="checkbox" name="servicos[]" value="dinamica"> Dinâmica</label><br>
+                            <label><input type="checkbox" name="servicos[]" value="avancada"> Avançada</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="mensagem">Seu Projeto *</label></td>
+                        <td><textarea id="mensagem" name="mensagem" rows="4" required placeholder="Descreva seu projeto..."></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="botoes-linha">
+                            <button type="submit" class="btn-enviar-tabela">Enviar</button>
+                            <button type="reset" class="btn-limpar-tabela">Limpar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
